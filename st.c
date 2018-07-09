@@ -26,6 +26,9 @@
  #include <util.h>
 #elif defined(__FreeBSD__) || defined(__DragonFly__)
  #include <libutil.h>
+#elif defined(__sun) || (__svr4__)
+ #include <stropts.h>
+ #include "openpty.h"
 #endif
 
 /* Arbitrary sizes */

@@ -5,6 +5,8 @@
 include config.mk
 
 SRC = st.c x.c
+# solaris or illumos
+# SRC = st.c x.c
 OBJ = $(SRC:.c=.o)
 
 all: options st
